@@ -3,7 +3,7 @@ package javaapp;
 import java.util.Iterator;
 
 interface IntStack {
-	void push(int item); //��������� ������� � �����
+	void push(int item); //
 	int pop();
 	
 	default void clear() {

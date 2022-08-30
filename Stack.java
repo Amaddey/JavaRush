@@ -4,7 +4,7 @@ import java.util.Iterator;
 
 interface IntStack {
 	void push(int item); //��������� ������� � �����
-	int pop(); 
+	int pop();
 	
 	default void clear() {
 		System.out.println("����� clear() �� ����������.");

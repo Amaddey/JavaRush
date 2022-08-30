@@ -3,11 +3,11 @@ package javaapp;
 import java.util.Iterator;
 
 interface IntStack {
-	void push(int item); //сохранить элемент в стеке
-	int pop(); // извлечь элемент из стека
+	void push(int item); //пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ
+	int pop(); 
 	
 	default void clear() {
-		System.out.println("Метод clear() не реализован.");
+		System.out.println("пїЅпїЅпїЅпїЅпїЅ clear() пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ.");
 	}
 }
 
@@ -25,14 +25,14 @@ class FixedStack implements IntStack {
 	
 	public void push(int item) {
 		if(tos==stck.length-1)
-			System.out.println("Стек заполнен");
+			System.out.println("пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ");
 		else
 			stck[++tos] = item;
 	}
 	
 	public int pop() {
 		if(tos < 0) {
-			System.out.println("Стек не загружен.");
+			System.out.println("пїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ.");
 			return 0;
 		}
 		else 
@@ -67,7 +67,7 @@ class DynStack implements IntStack {
 	}
 	public int pop() {
 		if(tos < 0) {
-			System.out.println("Стек не загружен.");
+			System.out.println("пїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ.");
 			counter = 0;
 			return 0;
 		}

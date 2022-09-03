@@ -13,7 +13,7 @@ import java.util.Iterator;
 //Lesson 7
 
 public class Main {
-	
+	 
 	public static void main(String[] args) throws NumberFormatException, IOException, InterruptedException
 	{
 		ArrayList list = new ArrayList();
